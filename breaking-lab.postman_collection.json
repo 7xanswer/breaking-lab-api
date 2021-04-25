@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "0a508319-4824-4010-a94d-92d005f9790b",
+		"name": "breaking-lab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "seasons",
+			"item": [
+				{
+					"name": "seasons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/seasons",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"seasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seasons",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"release_date\": \"01-01-2021\",\r\n    \"final_date\": \"02-09-2021\",\r\n    \"episodes\": 18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/seasons",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"seasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seasons",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"release_date\": \"01-01-2021\",\r\n    \"final_date\": \"02-09-2021\",\r\n    \"episodes\": 18,\r\n    \"introduction\": \"Once upon a time in Albuquerque.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/seasons/6",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"seasons",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seasons",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"release_date\": \"01-01-2021\",\r\n    \"final_date\": \"02-09-2021\",\r\n    \"episodes\": 18,\r\n    \"introduction\": \"Once upon a time in Albuquerque.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/seasons/6",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"seasons",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "episodes",
+			"item": [
+				{
+					"name": "episodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/episodes",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"episodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "episodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 63,\r\n    \"synopsis\": \"Return of the Jedi.\",\r\n    \"seasonId\": 1,\r\n    \"episode\": 1,\r\n    \"air_date\": \"01-01-2021\",\r\n    \"rating\": 6,\r\n    \"imdb\": \"https://www.imdb.com/title/tt2301451/?ref_=ttep_ep14\",\r\n    \"netflix\": \"https://www.netflix.com/watch/70236426/\",\r\n    \"thumbnail\": \"https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbzkxG_1axM_UCx-eO9eJYGJorp_vBKbqJUemiUZQqflTjQt-b4N6WUEhMHyonaKHX_EeaYGrIab2q0maAWq1Tv30UkvUMvlI1DtU4d9uHgcQGY6.webp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/episodes",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"episodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "episodes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 63,\r\n    \"title\": \"Albuquerque\",\r\n    \"synopsis\": \"Return of the Jedi.\",\r\n    \"seasonId\": 1,\r\n    \"episode\": 1,\r\n    \"air_date\": \"01-01-2021\",\r\n    \"rating\": 6,\r\n    \"imdb\": \"https://www.imdb.com/title/tt2301451/?ref_=ttep_ep14\",\r\n    \"netflix\": \"https://www.netflix.com/watch/70236426/\",\r\n    \"thumbnail\": \"https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbzkxG_1axM_UCx-eO9eJYGJorp_vBKbqJUemiUZQqflTjQt-b4N6WUEhMHyonaKHX_EeaYGrIab2q0maAWq1Tv30UkvUMvlI1DtU4d9uHgcQGY6.webp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/episodes/63",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"episodes",
+								"63"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "episodes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 63,\r\n    \"title\": \"Albuquerque\",\r\n    \"synopsis\": \"Return of the Jedi.\",\r\n    \"seasonId\": 1,\r\n    \"episode\": 1,\r\n    \"air_date\": \"01-01-2021\",\r\n    \"rating\": 6,\r\n    \"imdb\": \"https://www.imdb.com/title/tt2301451/?ref_=ttep_ep14\",\r\n    \"netflix\": \"https://www.netflix.com/watch/70236426/\",\r\n    \"thumbnail\": \"https://occ-0-55-56.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbzkxG_1axM_UCx-eO9eJYGJorp_vBKbqJUemiUZQqflTjQt-b4N6WUEhMHyonaKHX_EeaYGrIab2q0maAWq1Tv30UkvUMvlI1DtU4d9uHgcQGY6.webp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://breaking-lab-api.herokuapp.com/episodes/63",
+							"protocol": "https",
+							"host": [
+								"breaking-lab-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"episodes",
+								"63"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
